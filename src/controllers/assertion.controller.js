@@ -1,10 +1,7 @@
 const assert = require('assert');
-const request = require('request');
+const saveFile = require('../results/data');
 const assertionData = require('../assertionData/data');
 const clientServer = require('../clientServer/server');
-
-let database = [];
-let id = 0;
 
 let controller = {
   validateServerData: (req, res, next) => {
@@ -31,6 +28,7 @@ let controller = {
 
   assertEndpoint: (req, res, next) => {
     let serverData = req.body;
+    let { studentnumber, url, endpoint, method } = serverData;
     serverData = {
       ...serverData,
       data: assertionData.postMovie,
@@ -38,7 +36,35 @@ let controller = {
 
     clientServer.clientServerOptions(serverData, (error, result) => {
       if (result) {
-        next(result);
+        let code;
+        console.log(result.status);
+        console.log(assertionData.status);
+        if (
+          result.status == assertionData.postMovie.expectedStatus &&
+          result.message == assertionData.postMovie.expectedMesage
+        ) {
+          code = 'Pass';
+        } else {
+          code = 'Fail';
+        }
+
+        let output = {
+          studentnumber: studentnumber,
+          method: method,
+          endpoint: endpoint,
+          status: code,
+        };
+
+        saveFile.save(output, (error, result) => {
+          if (error) next(error);
+        });
+
+        let overview = {
+          status: 200,
+          message: code,
+          result: result,
+        };
+        next(overview);
       }
     });
   },

@@ -30,7 +30,7 @@ app.use((result, req, res, next) => {
 });
 
 app.listen(port, () => {
-  console.log(`Movie API listening on port ${port}`);
+  console.log(`Assertion API listening on port ${port}`);
 });
 
 module.exports = app;
