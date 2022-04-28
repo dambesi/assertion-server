@@ -1,0 +1,38 @@
+{
+  "name": "assertion-server",
+  "version": "1.0.0",
+  "description": "Assertion server API programmeren 4",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": " mocha test/**/*.test.js --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dambesi/assertion-server.git"
+  },
+  "author": "Davide",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dambesi/assertion-server/issues"
+  },
+  "homepage": "https://github.com/dambesi/assertion-server#readme",
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "mocha": "^9.2.2",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3",
+    "request": "^2.88.2"
+  }
+}
