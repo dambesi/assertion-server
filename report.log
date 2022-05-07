@@ -1,0 +1,93 @@
+
+
+  Share a meal API of 1234567 tested @ 5/7/2022, 9:28:34 AM
+    UC-101 login /api/auth/login
+      √ TC-101-1 Verplicht veld ontbreekt (441ms)
+      √ TC-101-2 Niet valide emailadres (477ms)
+      √ TC-101-3 Niet valide wachtwoord (474ms)
+      √ TC-101-4 Gebruiker bestaat niet (448ms)
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InIuc2NoZWxsaXVzQGF2YW5zLm5sIiwic3ViIjoxLCJpYXQiOjE2NTE5MDg1MTYsImV4cCI6MTY1MjA4MTMxNn0.-eaRzzoCPqE_q6tOH2yR2RYNVJo-g694V7kyz8zZRyE
+      √ TC-101-5 Gebruiker scuccesvol ingelogd (466ms)
+    UC-201 registreren /api/user
+      - TC-201-1 Verplicht veld ontbreekt
+      - TC-201-2 Niet valide emailadres
+      - TC-201-3 Niet valide wachtwoord
+      - TC-201-4 Gebruiker bestaat al
+    UC-203 Gebruikersprofiel opvragen /api/user/profile
+      √ TC-203-1 Ongeldig token (374ms)
+{
+  result: {
+    roles: [],
+    isActive: true,
+    phoneNumber: '',
+    id: 67,
+    firstName: 'Assertion',
+    lastName: 'Server',
+    street: 'Lovensdijkstraat 61',
+    city: 'Breda',
+    emailAdress: 'assertion.server@mail.com'
+  }
+}
+      √ TC-203-2 Valide token en gebruiker bestaat (478ms)
+    UC-204 Details van gebruiker /api/user/:id
+      √ TC-204-1 Ongeldig token (371ms)
+{}
+      1) TC-204-2 Gebruiker-ID bestaat niet
+      √ TC-204-3 Gebruiker-ID bestaat (452ms)
+    UC-205 Gebruiker wijzigen /api/user/:id
+      - TC-205-1 Verplicht veld ontbreekt
+      - TC-205-2 Niet valide postcode
+      - TC-205-3 Niet valide telefoonnummer
+      - TC-205-4 Gebruiker bestaat niet
+      - TC-205-5 Niet ingelogd
+      - TC-205-6 Gebruiker succesvol gewijzigd
+    UC-206 Gebruiker verwijderen /api/user/:id
+      - TC-206-1 Gebruiker bestaat niet
+      - TC-206-2 Niet ingelogd
+      - TC-206-3 Actor is geen eigenaar
+    UC-301 Maaltijd aanmaken /api/meal
+      - TC-301-1 Verplicht veld ontbreekt
+      - TC-301-2 Niet ingelogd
+      - TC-301-3 Maaltijd succesvol toegevoegd
+    UC-302 Maaltijd wijzigen /api/meal/:id
+      - TC-302-1 Verplicht veld ontbreekt
+      - TC-302-2 Niet ingelogd
+      - TC-302-3 Niet eigenaar van de data
+      - TC-302-4 Maaltijd bestaat niet
+      - TC-302-5 Maaltijd succesvol gewijzigd
+    UC-303 Lijst van maaltijden opvragen /api/meal
+      - TC-303-1 Lijst van maaltijden geretourneerd
+    UC-304 Details van een maaltijd opvragen /api/meal/:id
+      - TC-304-1 Maaltijden bestaan niet
+      - TC-304-2 Details van maaltijd is geretourneerd
+    UC-305 Maaltijd verwijderen /api/meal/:id
+      - TC-305-2 Niet ingelogd
+      - TC-305-3 Niet eigenaar van de data
+      - TC-305-4 Maaltijd bestaat niet
+    UC-401 Aanmelden voor maaltijd /api/meal/:id/participate
+      - TC-401-1 Niet ingelogd
+      - TC-401-2 Maaltijd bestaat niet
+      - TC-401-3 Succesvol aangemeld
+    UC-402 Afmelden voor maaltijd /api/meal/:id/participate
+      - TC-402-1 Niet ingelogd
+      - TC-402-2 Maaltijd bestaat niet
+      - TC-402-3 Succesvol afgemeld
+
+
+  9 passing (4s)
+  33 pending
+  1 failing
+
+  1) Share a meal API of 1234567 tested @ 5/7/2022, 9:28:34 AM
+       UC-204 Details van gebruiker /api/user/:id
+         TC-204-2 Gebruiker-ID bestaat niet:
+     Uncaught AssertionError: expected {} to have property 'message'
+      at C:\dev\NodeJS\online-assertion-server\test\integration\test.js:338:34
+      at Test.Request.callback (node_modules\superagent\lib\node\index.js:716:12)
+      at C:\dev\NodeJS\online-assertion-server\node_modules\superagent\lib\node\index.js:916:18
+      at IncomingMessage.<anonymous> (node_modules\superagent\lib\node\parsers\json.js:19:7)
+      at endReadableNT (_stream_readable.js:1241:12)
+      at processTicksAndRejections (internal/process/task_queues.js:84:21)
+
+
+

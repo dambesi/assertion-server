@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "test": " mocha test/**/*.test.js --exit"
+    "test": "mocha --no-colors test/**/*test.js --timeout 0  2>&1 | tee report.log"
   },
   "repository": {
     "type": "git",
@@ -18,21 +18,24 @@
     "url": "https://github.com/dambesi/assertion-server/issues"
   },
   "homepage": "https://github.com/dambesi/assertion-server#readme",
-  "prettier": {
-    "trailingComma": "es5",
-    "tabWidth": 2,
-    "semi": true,
-    "singleQuote": true
-  },
   "devDependencies": {
+    "@mochajs/json-file-reporter": "^1.3.0",
     "chai": "^4.3.6",
     "chai-http": "^4.3.0",
     "mocha": "^9.2.2",
     "nodemon": "^2.0.15"
   },
   "dependencies": {
+    "async": "^3.2.3",
     "body-parser": "^1.19.2",
+    "child_process": "^1.0.2",
     "express": "^4.17.3",
     "request": "^2.88.2"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true
   }
 }

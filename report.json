@@ -1,0 +1,539 @@
+{
+  "stats": {
+    "suites": 14,
+    "tests": 43,
+    "passes": 2,
+    "pending": 41,
+    "failures": 0,
+    "start": "2022-05-07T08:00:02.648Z",
+    "end": "2022-05-07T08:00:03.572Z",
+    "duration": 924
+  },
+  "tests": [
+    {
+      "title": "TC-101-1 Verplicht veld ontbreekt",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-101 login /api/auth/login TC-101-1 Verplicht veld ontbreekt",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-101-2 Niet valide emailadres",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-101 login /api/auth/login TC-101-2 Niet valide emailadres",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-101-3 Niet valide wachtwoord",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-101 login /api/auth/login TC-101-3 Niet valide wachtwoord",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-101-4 Gebruiker bestaat niet",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-101 login /api/auth/login TC-101-4 Gebruiker bestaat niet",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-101-5 Gebruiker scuccesvol ingelogd",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-101 login /api/auth/login TC-101-5 Gebruiker scuccesvol ingelogd",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-201-1 Verplicht veld ontbreekt",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-201 registreren /api/user TC-201-1 Verplicht veld ontbreekt",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-201-2 Niet valide emailadres",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-201 registreren /api/user TC-201-2 Niet valide emailadres",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-201-3 Niet valide wachtwoord",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-201 registreren /api/user TC-201-3 Niet valide wachtwoord",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-201-4 Gebruiker bestaat al",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-201 registreren /api/user TC-201-4 Gebruiker bestaat al",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-203-1 Ongeldig token",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-203 Gebruikersprofiel opvragen /api/user/profile TC-203-1 Ongeldig token",
+      "duration": 436,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-203-2 Valide token en gebruiker bestaat",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-203 Gebruikersprofiel opvragen /api/user/profile TC-203-2 Valide token en gebruiker bestaat",
+      "duration": 472,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-204-1 Ongeldig token",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-204 Details van gebruiker /api/user/:id TC-204-1 Ongeldig token",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-204-2 Gebruiker-ID bestaat niet",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-204 Details van gebruiker /api/user/:id TC-204-2 Gebruiker-ID bestaat niet",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-204-3 Gebruiker-ID bestaat",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-204 Details van gebruiker /api/user/:id TC-204-3 Gebruiker-ID bestaat",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-205-1 Verplicht veld ontbreekt",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-205 Gebruiker wijzigen /api/user/:id TC-205-1 Verplicht veld ontbreekt",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-205-2 Niet valide postcode",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-205 Gebruiker wijzigen /api/user/:id TC-205-2 Niet valide postcode",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-205-3 Niet valide telefoonnummer",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-205 Gebruiker wijzigen /api/user/:id TC-205-3 Niet valide telefoonnummer",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-205-4 Gebruiker bestaat niet",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-205 Gebruiker wijzigen /api/user/:id TC-205-4 Gebruiker bestaat niet",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-205-5 Niet ingelogd",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-205 Gebruiker wijzigen /api/user/:id TC-205-5 Niet ingelogd",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-205-6 Gebruiker succesvol gewijzigd",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-205 Gebruiker wijzigen /api/user/:id TC-205-6 Gebruiker succesvol gewijzigd",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-206-1 Gebruiker bestaat niet",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-206 Gebruiker verwijderen /api/user/:id TC-206-1 Gebruiker bestaat niet",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-206-2 Niet ingelogd",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-206 Gebruiker verwijderen /api/user/:id TC-206-2 Niet ingelogd",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-206-3 Actor is geen eigenaar",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-206 Gebruiker verwijderen /api/user/:id TC-206-3 Actor is geen eigenaar",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-301-1 Verplicht veld ontbreekt",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-301 Maaltijd aanmaken /api/meal TC-301-1 Verplicht veld ontbreekt",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-301-2 Niet ingelogd",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-301 Maaltijd aanmaken /api/meal TC-301-2 Niet ingelogd",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-301-3 Maaltijd succesvol toegevoegd",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-301 Maaltijd aanmaken /api/meal TC-301-3 Maaltijd succesvol toegevoegd",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-302-1 Verplicht veld ontbreekt",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-302 Maaltijd wijzigen /api/meal/:id TC-302-1 Verplicht veld ontbreekt",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-302-2 Niet ingelogd",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-302 Maaltijd wijzigen /api/meal/:id TC-302-2 Niet ingelogd",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-302-3 Niet eigenaar van de data",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-302 Maaltijd wijzigen /api/meal/:id TC-302-3 Niet eigenaar van de data",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-302-4 Maaltijd bestaat niet",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-302 Maaltijd wijzigen /api/meal/:id TC-302-4 Maaltijd bestaat niet",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-302-5 Maaltijd succesvol gewijzigd",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-302 Maaltijd wijzigen /api/meal/:id TC-302-5 Maaltijd succesvol gewijzigd",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-303-1 Lijst van maaltijden geretourneerd",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-303 Lijst van maaltijden opvragen /api/meal TC-303-1 Lijst van maaltijden geretourneerd",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-304-1 Maaltijden bestaan niet",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-304 Details van een maaltijd opvragen /api/meal/:id TC-304-1 Maaltijden bestaan niet",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-304-2 Details van maaltijd is geretourneerd",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-304 Details van een maaltijd opvragen /api/meal/:id TC-304-2 Details van maaltijd is geretourneerd",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-305-2 Niet ingelogd",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-305 Maaltijd verwijderen /api/meal/:id TC-305-2 Niet ingelogd",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-305-3 Niet eigenaar van de data",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-305 Maaltijd verwijderen /api/meal/:id TC-305-3 Niet eigenaar van de data",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-305-4 Maaltijd bestaat niet",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-305 Maaltijd verwijderen /api/meal/:id TC-305-4 Maaltijd bestaat niet",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-401-1 Niet ingelogd",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-401 Aanmelden voor maaltijd /api/meal/:id/participate TC-401-1 Niet ingelogd",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-401-2 Maaltijd bestaat niet",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-401 Aanmelden voor maaltijd /api/meal/:id/participate TC-401-2 Maaltijd bestaat niet",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-401-3 Succesvol aangemeld",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-401 Aanmelden voor maaltijd /api/meal/:id/participate TC-401-3 Succesvol aangemeld",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-402-1 Niet ingelogd",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-402 Afmelden voor maaltijd /api/meal/:id/participate TC-402-1 Niet ingelogd",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-402-2 Maaltijd bestaat niet",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-402 Afmelden voor maaltijd /api/meal/:id/participate TC-402-2 Maaltijd bestaat niet",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-402-3 Succesvol afgemeld",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-402 Afmelden voor maaltijd /api/meal/:id/participate TC-402-3 Succesvol afgemeld",
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [
+    {
+      "title": "TC-101-1 Verplicht veld ontbreekt",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-101 login /api/auth/login TC-101-1 Verplicht veld ontbreekt",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-101-2 Niet valide emailadres",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-101 login /api/auth/login TC-101-2 Niet valide emailadres",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-101-3 Niet valide wachtwoord",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-101 login /api/auth/login TC-101-3 Niet valide wachtwoord",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-101-4 Gebruiker bestaat niet",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-101 login /api/auth/login TC-101-4 Gebruiker bestaat niet",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-101-5 Gebruiker scuccesvol ingelogd",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-101 login /api/auth/login TC-101-5 Gebruiker scuccesvol ingelogd",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-201-1 Verplicht veld ontbreekt",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-201 registreren /api/user TC-201-1 Verplicht veld ontbreekt",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-201-2 Niet valide emailadres",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-201 registreren /api/user TC-201-2 Niet valide emailadres",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-201-3 Niet valide wachtwoord",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-201 registreren /api/user TC-201-3 Niet valide wachtwoord",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-201-4 Gebruiker bestaat al",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-201 registreren /api/user TC-201-4 Gebruiker bestaat al",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-204-1 Ongeldig token",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-204 Details van gebruiker /api/user/:id TC-204-1 Ongeldig token",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-204-2 Gebruiker-ID bestaat niet",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-204 Details van gebruiker /api/user/:id TC-204-2 Gebruiker-ID bestaat niet",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-204-3 Gebruiker-ID bestaat",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-204 Details van gebruiker /api/user/:id TC-204-3 Gebruiker-ID bestaat",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-205-1 Verplicht veld ontbreekt",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-205 Gebruiker wijzigen /api/user/:id TC-205-1 Verplicht veld ontbreekt",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-205-2 Niet valide postcode",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-205 Gebruiker wijzigen /api/user/:id TC-205-2 Niet valide postcode",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-205-3 Niet valide telefoonnummer",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-205 Gebruiker wijzigen /api/user/:id TC-205-3 Niet valide telefoonnummer",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-205-4 Gebruiker bestaat niet",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-205 Gebruiker wijzigen /api/user/:id TC-205-4 Gebruiker bestaat niet",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-205-5 Niet ingelogd",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-205 Gebruiker wijzigen /api/user/:id TC-205-5 Niet ingelogd",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-205-6 Gebruiker succesvol gewijzigd",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-205 Gebruiker wijzigen /api/user/:id TC-205-6 Gebruiker succesvol gewijzigd",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-206-1 Gebruiker bestaat niet",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-206 Gebruiker verwijderen /api/user/:id TC-206-1 Gebruiker bestaat niet",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-206-2 Niet ingelogd",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-206 Gebruiker verwijderen /api/user/:id TC-206-2 Niet ingelogd",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-206-3 Actor is geen eigenaar",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-206 Gebruiker verwijderen /api/user/:id TC-206-3 Actor is geen eigenaar",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-301-1 Verplicht veld ontbreekt",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-301 Maaltijd aanmaken /api/meal TC-301-1 Verplicht veld ontbreekt",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-301-2 Niet ingelogd",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-301 Maaltijd aanmaken /api/meal TC-301-2 Niet ingelogd",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-301-3 Maaltijd succesvol toegevoegd",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-301 Maaltijd aanmaken /api/meal TC-301-3 Maaltijd succesvol toegevoegd",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-302-1 Verplicht veld ontbreekt",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-302 Maaltijd wijzigen /api/meal/:id TC-302-1 Verplicht veld ontbreekt",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-302-2 Niet ingelogd",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-302 Maaltijd wijzigen /api/meal/:id TC-302-2 Niet ingelogd",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-302-3 Niet eigenaar van de data",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-302 Maaltijd wijzigen /api/meal/:id TC-302-3 Niet eigenaar van de data",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-302-4 Maaltijd bestaat niet",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-302 Maaltijd wijzigen /api/meal/:id TC-302-4 Maaltijd bestaat niet",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-302-5 Maaltijd succesvol gewijzigd",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-302 Maaltijd wijzigen /api/meal/:id TC-302-5 Maaltijd succesvol gewijzigd",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-303-1 Lijst van maaltijden geretourneerd",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-303 Lijst van maaltijden opvragen /api/meal TC-303-1 Lijst van maaltijden geretourneerd",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-304-1 Maaltijden bestaan niet",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-304 Details van een maaltijd opvragen /api/meal/:id TC-304-1 Maaltijden bestaan niet",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-304-2 Details van maaltijd is geretourneerd",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-304 Details van een maaltijd opvragen /api/meal/:id TC-304-2 Details van maaltijd is geretourneerd",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-305-2 Niet ingelogd",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-305 Maaltijd verwijderen /api/meal/:id TC-305-2 Niet ingelogd",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-305-3 Niet eigenaar van de data",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-305 Maaltijd verwijderen /api/meal/:id TC-305-3 Niet eigenaar van de data",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-305-4 Maaltijd bestaat niet",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-305 Maaltijd verwijderen /api/meal/:id TC-305-4 Maaltijd bestaat niet",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-401-1 Niet ingelogd",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-401 Aanmelden voor maaltijd /api/meal/:id/participate TC-401-1 Niet ingelogd",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-401-2 Maaltijd bestaat niet",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-401 Aanmelden voor maaltijd /api/meal/:id/participate TC-401-2 Maaltijd bestaat niet",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-401-3 Succesvol aangemeld",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-401 Aanmelden voor maaltijd /api/meal/:id/participate TC-401-3 Succesvol aangemeld",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-402-1 Niet ingelogd",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-402 Afmelden voor maaltijd /api/meal/:id/participate TC-402-1 Niet ingelogd",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-402-2 Maaltijd bestaat niet",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-402 Afmelden voor maaltijd /api/meal/:id/participate TC-402-2 Maaltijd bestaat niet",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-402-3 Succesvol afgemeld",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-402 Afmelden voor maaltijd /api/meal/:id/participate TC-402-3 Succesvol afgemeld",
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "failures": [],
+  "passes": [
+    {
+      "title": "TC-203-1 Ongeldig token",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-203 Gebruikersprofiel opvragen /api/user/profile TC-203-1 Ongeldig token",
+      "duration": 436,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "TC-203-2 Valide token en gebruiker bestaat",
+      "fullTitle": "Share a meal API of 1234567 tested @ 5/7/2022, 10:00:02 AM UC-203 Gebruikersprofiel opvragen /api/user/profile TC-203-2 Valide token en gebruiker bestaat",
+      "duration": 472,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}
