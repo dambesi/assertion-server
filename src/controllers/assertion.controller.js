@@ -38,7 +38,7 @@ let controller = {
     execSync.exec(
       // 'mocha --no-colors test/**/*test.js --timeout 0  2>&1 | tee report.log'
       // 'mocha --timeout 0 --reporter @mochajs/json-file-reporter --reporter-options output=filename.json '
-      'mocha test/**/*test.js --reporter @mochajs/json-file-reporter --timeout 0',
+      'heroku run mocha test/**/*test.js --reporter @mochajs/json-file-reporter --timeout 0',
       (error, stdout, stderr) => {
         console.log(`This is the stdout ${stdout}`);
         console.log(`This is the stderr ${stderr}`);
