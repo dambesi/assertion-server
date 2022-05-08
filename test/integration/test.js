@@ -5,13 +5,21 @@ wordt live in de terminaal getoond en in het bestand "report.log" opgeslagen.
 
 const chai = require('chai');
 const chaiHttp = require('chai-http');
-const credentials = require('./credentials');
+// const credentials = require('./credentials');
 chai.should();
 chai.use(chaiHttp);
 
-let token;
+const credentials = [
+  {
+    studentnumber: process.env.studentnumber,
+    server: process.env.server,
+    token: process.env.token,
+  },
+];
+let newToken;
 
 credentials.forEach((item) => {
+  console.log(credentials);
   let date = new Date().toLocaleString('nl-NL', {
     timeZone: 'Europe/Amsterdam',
   });
@@ -96,7 +104,7 @@ credentials.forEach((item) => {
               .property('emailAdress')
               .that.equals('r.schellius@avans.nl');
             result.should.have.property('token');
-            token = result.token;
+            newToken = result.token;
             // console.log(token);
             done();
           });
@@ -279,7 +287,7 @@ credentials.forEach((item) => {
           });
       });
     });
-    describe.only('UC-203 Gebruikersprofiel opvragen /api/user/profile', () => {
+    describe.skip('UC-203 Gebruikersprofiel opvragen /api/user/profile', () => {
       it.only('TC-203-1 Ongeldig token', (done) => {
         chai
           .request(item.server)
@@ -310,7 +318,7 @@ credentials.forEach((item) => {
           });
       });
     });
-    describe.only('UC-204 Details van gebruiker /api/user/:id', () => {
+    describe.skip('UC-204 Details van gebruiker /api/user/:id', () => {
       it.only('TC-204-1 Ongeldig token', (done) => {
         chai
           .request(item.server)
@@ -355,7 +363,7 @@ credentials.forEach((item) => {
           });
       });
     });
-    describe.only('UC-205 Gebruiker wijzigen /api/user/:id', () => {
+    describe.skip('UC-205 Gebruiker wijzigen /api/user/:id', () => {
       it.only('TC-205-1 Verplicht veld ontbreekt', (done) => {
         chai
           .request(item.server)
@@ -471,7 +479,7 @@ credentials.forEach((item) => {
           });
       });
     });
-    describe.only('UC-206 Gebruiker verwijderen /api/user/:id', () => {
+    describe.skip('UC-206 Gebruiker verwijderen /api/user/:id', () => {
       it.only('TC-206-1 Gebruiker bestaat niet', (done) => {
         chai
           .request(item.server)
@@ -524,7 +532,7 @@ credentials.forEach((item) => {
           });
       });
     });
-    describe.only('UC-301 Maaltijd aanmaken /api/meal', () => {
+    describe.skip('UC-301 Maaltijd aanmaken /api/meal', () => {
       it.only('TC-301-1 Verplicht veld ontbreekt', (done) => {
         chai
           .request(item.server)
@@ -605,7 +613,7 @@ credentials.forEach((item) => {
           });
       });
     });
-    describe.only('UC-302 Maaltijd wijzigen /api/meal/:id', () => {
+    describe.skip('UC-302 Maaltijd wijzigen /api/meal/:id', () => {
       it.only('TC-302-1 Verplicht veld ontbreekt', (done) => {
         chai
           .request(item.server)
@@ -727,7 +735,7 @@ credentials.forEach((item) => {
           });
       });
     });
-    describe.only('UC-303 Lijst van maaltijden opvragen /api/meal', () => {
+    describe.skip('UC-303 Lijst van maaltijden opvragen /api/meal', () => {
       it.only('TC-303-1 Lijst van maaltijden geretourneerd', (done) => {
         chai
           .request(item.server)
@@ -741,7 +749,7 @@ credentials.forEach((item) => {
           });
       });
     });
-    describe.only('UC-304 Details van een maaltijd opvragen /api/meal/:id', () => {
+    describe.skip('UC-304 Details van een maaltijd opvragen /api/meal/:id', () => {
       it.only('TC-304-1 Maaltijden bestaan niet', (done) => {
         chai
           .request(item.server)
@@ -767,7 +775,7 @@ credentials.forEach((item) => {
           });
       });
     });
-    describe.only('UC-305 Maaltijd verwijderen /api/meal/:id', () => {
+    describe.skip('UC-305 Maaltijd verwijderen /api/meal/:id', () => {
       it.only('TC-305-2 Niet ingelogd', (done) => {
         chai
           .request(item.server)
@@ -821,7 +829,7 @@ credentials.forEach((item) => {
           });
       });
     });
-    describe.only('UC-401 Aanmelden voor maaltijd /api/meal/:id/participate', () => {
+    describe.skip('UC-401 Aanmelden voor maaltijd /api/meal/:id/participate', () => {
       it.only('TC-401-1 Niet ingelogd', (done) => {
         chai
           .request(item.server)
@@ -862,7 +870,7 @@ credentials.forEach((item) => {
           });
       });
     });
-    describe.only('UC-402 Afmelden voor maaltijd /api/meal/:id/participate', () => {
+    describe.skip('UC-402 Afmelden voor maaltijd /api/meal/:id/participate', () => {
       it.only('TC-402-1 Niet ingelogd', (done) => {
         chai
           .request(item.server)
